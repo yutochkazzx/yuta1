@@ -17,13 +17,13 @@
             <img src="{% static 'img/rev.png' %}" alt="Logo">
         </div>
         
-        <div class="search">
-            <form action="" id="search-form" class="search-form" style="display: none;">
+        {% comment %} <div class="search">
+            <form action="" id="search-form" class="search-form d-flex" style="display: none;">
                 <input type="text" name="q" class="form_input" placeholder="Search">
                 <button type="submit" class="btnforsearch">Search</button> <!-- Добавлен текст кнопки -->
             </form>
         </div>
-    
+     {% endcomment %}
         <div class="header-nav d-flex gap-4">
             <a href="#" class="h-profile"> <!-- Заменил "№" на "#" -->
                 <img src="{% static 'img/cart.png' %}" alt="Cart">
@@ -48,7 +48,7 @@
         </div>
     </header>
     
-                                                            316274441131 psswrd name : nail1trya
+                                                           
     <div class="container">
         {% block content %}{% endblock content %}
     </div>

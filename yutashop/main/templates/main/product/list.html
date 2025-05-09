@@ -4,7 +4,8 @@
 {% block title %}Reverence{% endblock title %}
 
 {% block content %}
-<h1 class="rev-head text-uppercase" id="reverence-title">Reverence Interlude - ALL</h1>
+<h2 class="rev-head text-uppercase" id="reverence-title">Reverence Interlude - ALL</h1>
+<div class="border-item"></div>
 <div class="catalog d-flex">
 
     <form action="{% url 'main:catalog' %}" method="get" class="sidebar" id="filter-form">
@@ -75,5 +76,6 @@
             form.submit();  // Отправляем форму
         }
     });
+  
 </script>
 {% endblock content %}

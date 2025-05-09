@@ -16,8 +16,7 @@ class CatalogView(ListView):
         min_price = self.request.GET.get('min_price')
         max_price = self.request.GET.get('max_price')   
         print("Выбранные категории:", category_slugs)
- 
-    
+       
 
 
         if category_slugs:
@@ -53,8 +52,6 @@ class ClothingItemDetailView(DetailView):
     context_object_name = 'clothing_item'
     slug_field = 'slug'
     slug_url_kwarg = 'slug'
-
-
 
 
         
